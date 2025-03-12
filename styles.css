@@ -69,7 +69,7 @@ nav ul li a {
 }
 
 .text {
-  font-family: 'Poppins' f;
+  font-family: 'Poppins';
   max-width: 25%;
 }
 
@@ -223,7 +223,7 @@ footer.visible {
 }
 
 .about-us {
-  font-family: 'Poppins' f;
+  font-family: 'Poppins';
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -479,7 +479,7 @@ footer.visible {
 }
 
 .footer {
-  font-family: 'Poppins' f;
+  font-family: 'Poppins';
   color: rgb(255, 255, 255);
   padding: 50px;
   text-align: center;
@@ -643,7 +643,7 @@ footer.visible {
 }
 
 .copyright {
-  font-family: 'Poppins' f;
+  font-family: 'Poppins';
   font-size: 14px;
   width: 95%;
   padding-top: 20px;
