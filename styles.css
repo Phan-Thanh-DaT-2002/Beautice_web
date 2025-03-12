@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f8f9ff;
+  /* letter-spacing: 0.09em; */
 }
 
 header {
@@ -24,8 +25,8 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  width: 60%;
+  gap: 49px;
+  width: 73.5%;
   /* Adjust width to 2/3 */
   justify-content: flex-end;
   /* Align items to the right within the 2/3 width */
@@ -48,10 +49,10 @@ nav ul li a {
 }
 
 .contact-btn {
-  background: #ff66a3;
+  background: #FF64AE;
   color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 15px 45px;
+  border-radius: 60px;
   text-decoration: none;
   display: block;
   /* Add this line to make the button a block element */
@@ -66,11 +67,21 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  position: relative;
+  /* Add this line */
+}
+
+.hero .image {
+  position: absolute;
+  /* Add this line */
+  right: 0;
+  /* Add this line */
 }
 
 .text {
   font-family: 'Poppins';
-  max-width: 25%;
+  max-width: 40%;
+  /* Reduce the size of the text */
 }
 
 .text h1 {
@@ -86,8 +97,8 @@ nav ul li a {
 .details-btn {
   background: #ff66a3;
   color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 17px 43px;
+  border-radius: 25px;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
@@ -163,6 +174,11 @@ slider-button {
   transition: all 0.6s ease-in-out;
 }
 
+.about {
+  padding-top: 0px;
+  /* Reduce the top padding to move the section higher */
+}
+
 .services.visible,
 .about.visible,
 .team.visible,
@@ -208,18 +224,15 @@ footer.visible {
   /* Center the image horizontally */
 }
 
-.service-box h3 {
-  margin-top: 30%;
-  font-size: 18px;
-  font-weight: bold;
-  /* margin: 10px 0; */
-}
+
 
 .service-box p {
   font-size: 14px;
   color: #666;
-  margin-left: 18%;
-  margin-right: 18%;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: 20px;
+  /* Add this line to lower the paragraph by 30px */
 }
 
 .about-us {
@@ -266,7 +279,7 @@ footer.visible {
 }
 
 .btn {
-  padding: 15px 30px;
+  padding: 17px 55px;
   border: none;
   border-radius: 30px;
   font-size: 16px;
@@ -277,6 +290,8 @@ footer.visible {
 
 .btn-primary {
   background-color: #FF64AE;
+  margin-top: 20px;
+  /* Add this line to move the button down slightly */
 }
 
 .btn-secondary {
@@ -285,6 +300,9 @@ footer.visible {
 
 .image {
   max-width: 40%;
+  margin-left: 0;
+  padding: 0;
+  /* Remove padding from the image */
 }
 
 .image img {
