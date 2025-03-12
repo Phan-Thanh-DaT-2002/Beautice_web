@@ -188,6 +188,10 @@ footer.visible {
   transform: transl ateY(0);
 }
 
+.team {
+  padding-top: 50px;
+  /* Reduce the top padding to move the section higher */
+}
 
 .center {
   text-align: center;
@@ -330,7 +334,7 @@ footer.visible {
 .team-members {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 90px;
   padding: 50px 0;
 }
 
@@ -427,7 +431,8 @@ footer.visible {
 .contact-form textarea {
   width: 100%;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  /* Add this line to create a 40px gap between the elements */
   border-radius: 15px;
   border: 1px solid #ddd;
   box-sizing: border-box;
