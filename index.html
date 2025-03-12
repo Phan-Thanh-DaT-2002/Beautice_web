@@ -6,86 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page 1</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .header-hero-container {
+      background-image: url('/background/Bubble\ 1.png'), url('/background/Bubble\ 2_header.png');
+      background-size: calc(0.8 * contain), contain;
+      background-position: left center, left center;
+      background-repeat: no-repeat, no-repeat;
+    }
 
+    .services-about-container {
+      background-image: url('/background/Bubble\ 1_BGR_Midder.png'), url('/background/Bubble\ 1_BGR_Midder.png');
+      background-size: calc(0.8 * contain), contain;
+      background-position: right 80%;
+      /* Start background at 1/4 from the bottom of the services section */
+      background-repeat: no-repeat, no-repeat;
+      padding-top: 50px;
+      /* Adjust padding as needed */
+      padding-bottom: 50px;
+      /* Adjust padding as needed */
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <div class="">
-      <a href="#"><img src="/img/Main Logo.png" alt="Beauty Clinic Illustration"></a>
-    </div>
-    <!-- <div class="logo">Beautice</div> -->
-    <nav>
-      <ul>
-        <li><a href="#">Home +</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" class="contact-btn">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="text">
-      <h1>Clinic & beauty consultant</h1>
-      <p>It is a long established fact that a reader will be by the readable content of a page.</p>
-      <a href="#" class="details-btn">More Details</a>
-    </div>
-    <div class="image">
-      <img src="/img/Animation-1.png" alt="Beauty Clinic Illustration">
-    </div>
-  </section>
+  <div class="header-hero-container">
+    <header>
+      <div class="">
+        <a href="#"><img src="/img/Main Logo.png" alt="Beauty Clinic Illustration"></a>
+      </div>
+      <!-- <div class="logo">Beautice</div> -->
+      <nav>
+        <ul>
+          <li><a href="#" style="color: #414880; white-space: nowrap;">
+              <h5>Home +</h5>
+            </a></li>
+          <li><a href="#">
+              <h5>About</h5>
+            </a></li>
+          <li><a href="#">
+              <h5>Service</h5>
+            </a></li>
+          <li><a href="#">
+              <h5>Gallery</h5>
+            </a></li>
+          <li><a href="#">
+              <h5>Blog</h5>
+            </a></li>
+          <li style="display: flex; justify-content: center;">
+            <a href="#" class="contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="text">
+        <h1>Clinic & beauty consultant</h1>
+        <p>It is a long established fact that a reader will be by the readable content of a page.</p>
+        <a href="#" class="details-btn">More Details</a>
+      </div>
+      <div class="image">
+        <img src="/img/Animation-1.png" alt="Beauty Clinic Illustration">
+      </div>
+    </section>
+  </div>
   <div id="slider" class="slider-container ">
     <div class="slider-bar"></div>
     <div class="slider-button"></div>
     <div class="slider-bar"></div>
   </div>
-  <section class="services">
-    <div class="main-services">
-      <h2 class="section-title center">Main Services</h2>
-      <h3 class="subtitle center">Learn services to focus <br> on your beauty</h3>
-      <p class="description center">Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient
-        </br> amet,
-        feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-    </div>
-    <div class="service-boxes">
-      <div class="service-box">
-        <img src="/img/Animation1.png" alt="Consultation">
-        <h3>Beauty Consultation</h3>
-        <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+  <div class="services-about-container">
+    <section class="services">
+      <div class="main-services">
+        <h2 class="section-title center">Main Services</h2>
+        <h3 class="subtitle center">Learn services to focus <br> on your beauty</h3>
+        <p class="description center">Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non
+          parturient
+          </br> amet,
+          feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
       </div>
-      <div class="service-box">
-        <img src="/img/Animation2.png" alt="Skin Treatment">
-        <h3>Skin Treatments</h3>
-        <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-      </div>
-      <div class="service-box">
-        <img src="/img/Animation3.png" alt="Beauty Product">
-        <h3>Beauty Product</h3>
-        <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-      </div>
-    </div>
-  </section>
-  <section class="about">
-    <div class="about-us">
-      <div class="content">
-        <h2 class="section-title">About Us</h2>
-        <h1 class="main-title">We are the best beauty clinic</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec
-          amet. Egestas volutpat facilisi eu libero. Nunc, Ipsum ornare mauris sit quam quis enim. Varius tellus in
-          suspendisse placerat.</p>
-        <p class="description">Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
-        <div class="buttons">
-          <a href="#" class="btn btn-primary">Learn More</a>
-          <a href="#" class="btn btn-secondary">Watch Video</a>
+      <div class="service-boxes">
+        <div class="service-box">
+          <img src="/img/Animation1.png" alt="Consultation">
+          <h3>Beauty Consultation</h3>
+          <p style="color: #8B8B8B;">Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+        </div>
+        <div class="service-box">
+          <img src="/img/Animation2.png" alt="Skin Treatment">
+          <h3>Skin Treatments</h3>
+          <p style="color: #8B8B8B;">Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+        </div>
+        <div class="service-box">
+          <img src="/img/Animation3.png" alt="Beauty Product">
+          <h3>Beauty Product</h3>
+          <p style="color: #8B8B8B;">Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
         </div>
       </div>
-      <div class="image">
-        <img src="/img/unsplash_LRXYS0tSyGc.png" alt="Beauty Clinic">
+    </section>
+    <section class="about">
+      <div class="about-us">
+        <div class="content">
+          <h2 class="section-title">About Us</h2>
+          <h1 class="main-title">We are the best beauty clinic</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus
+            donec
+            amet. Egestas volutpat facilisi eu libero. Nunc, Ipsum ornare mauris sit quam quis enim. Varius tellus in
+            suspendisse placerat.</p>
+          <p class="description">Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="watch-video-btn">
+              <img src="/img/Play_button.png" alt="Play Icon"> Watch Video
+            </a>
+          </div>
+        </div>
+        <div>
+          <img class="" src="/img/unsplash_LRXYS0tSyGc.png" alt="Beauty Clinic">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <section class="team">
     <div>
       <h2 class="container">Professional Teams</h2>
@@ -96,8 +136,8 @@
       <div class="team-member">
         <img src="/img/1.png" alt="Briyan Nevalli">
         <p style="color: #FF64AE;">Surgeon </p>
-        <h3> Briyan Nevalli </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
+        <h3 style="color: #091156;"> Briyan Nevalli </h3>
+        <p style="color: #8B8B8B;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
         <div class="social-icons">
           <img src="/img/Twitter.png" alt="Twitter">
           <img src="/img/Facebook.png" alt="Facebook">
@@ -107,8 +147,8 @@
       <div class="team-member">
         <img src="/img/2.png" alt="Bella Sebastian">
         <p style="color: #FF64AE;">Dermatologist</p>
-        <h3>Bella Sebastian </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
+        <h3 style="color: #091156;">Bella Sebastian </h3>
+        <p style="color: #8B8B8B;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
         <div class="social-icons">
           <img src="/img/Twitter.png" alt="Twitter">
           <img src="/img/Facebook.png" alt="Facebook">
@@ -118,8 +158,8 @@
       <div class="team-member">
         <img src="/img/3.png" alt="Lilly Adams">
         <p style="color: #FF64AE;">Stylist Expert</p>
-        <h3>Lilly Adams </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
+        <h3 style="color: #091156;">Lilly Adams </h3>
+        <p style="color: #8B8B8B;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
         <div class="social-icons">
           <img src="/img/Twitter.png" alt="Twitter">
           <img src="/img/Facebook.png" alt="Facebook">

@@ -10,8 +10,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* background: white; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .logo {
@@ -24,12 +24,26 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  width: 60%;
+  /* Adjust width to 2/3 */
+  justify-content: flex-end;
+  /* Align items to the right within the 2/3 width */
+}
+
+nav ul li {
+  display: flex;
+  /* Add this line to make the li a flex container */
+  justify-content: center;
+  /* Add this line to center the content horizontally */
+  align-items: center;
+  /* Add this line to center the content vertically */
 }
 
 nav ul li a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
+  /* width: 50%; */
 }
 
 .contact-btn {
@@ -38,6 +52,12 @@ nav ul li a {
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
+  display: block;
+  /* Add this line to make the button a block element */
+  text-align: center;
+  /* Add this line to center the text inside the button */
+  margin: 0 auto;
+  /* Add this line to center the button itself */
 }
 
 .hero {
@@ -93,8 +113,8 @@ nav ul li a {
 }
 
 .slider-button {
-  width: 80px;
-  height: 30px;
+  width: 25px;
+  height: 8.15px;
   background: #3f4377;
   border-radius: 15px;
   position: relative;
@@ -115,13 +135,13 @@ nav ul li a {
 }
 
 .slider-bar {
-  width: 80px;
-  height: 10px;
+  width: 14px;
+  height: 8.15px;
   background: #eee;
   border-radius: 5px;
 }
 
-.slider-button {
+slider-button {
   width: 71px;
   height: 8.15px;
   background: #3f4377;
@@ -179,8 +199,12 @@ footer.visible {
 }
 
 .service-box img {
-  width: 100px;
-  height: 100px;
+  width: 166px;
+  height: 166px;
+  display: block;
+  /* Ensure the image is a block element */
+  margin: 0 auto;
+  /* Center the image horizontally */
 }
 
 .service-box h3 {
@@ -203,12 +227,13 @@ footer.visible {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  background: linear-gradient(to right, #f0f8ff, #ffffff);
+  /* background: linear-gradient(to right, #f0f8ff, #ffffff); */
   /* Gradient background */
 }
 
 .content {
   max-width: 50%;
+  margin-left: 150px;
 }
 
 .section-title {
@@ -219,7 +244,7 @@ footer.visible {
 }
 
 .main-title {
-  color: #FF64AE;
+  /* color: #FF64AE; */
 
   font-size: 36px;
   margin-bottom: 20px;
@@ -271,13 +296,16 @@ footer.visible {
   display: flex;
   justify-content: center;
   color: #FF64AE;
-
+  /* margin-left: 150px; */
 }
 
 .team-description {
   display: flex;
   justify-content: center;
-
+  text-align: center;
+  /* Ensure text is centered */
+  width: 100%;
+  /* Ensure it takes full width */
 }
 
 .team-members {
@@ -336,9 +364,12 @@ footer.visible {
   justify-content: center;
   padding: 100px 50px;
   background-image: url("/background/Bubble\ 2.png");
-  background-size: cover;
-  /* background: linear-gradient(to right, #f8f9ff, #ffffff); */
-  /* Gradient background */
+  background-size: 66.67% 100%;
+  /* Adjust background size to 2/3 width */
+  background-position: left;
+  /* Position background to the left */
+  background-repeat: no-repeat;
+  /* Prevent background from repeating */
 }
 
 .imageContact {
@@ -416,6 +447,35 @@ footer.visible {
   font-size: 16px;
 }
 
+.watch-video-btn {
+  display: flex;
+  align-items: center;
+  color: #8B8B8B;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.watch-video-btn img {
+  width: 24px;
+  /* Increase the size of the image */
+  height: 24px;
+  /* Increase the size of the image */
+}
+
+.image1 {
+  width: 20px;
+  height: 20px;
+
+}
+
+.image2 {
+  width: 40px;
+  height: 40px;
+}
 
 .footer {
   font-family: 'Poppins', sans-serif;
@@ -512,4 +572,6 @@ footer.visible {
   font-size: 14px;
   width: 100%;
   padding-top: 20px;
+  text-align: right;
+  /* Add this line to align text to the right */
 }
