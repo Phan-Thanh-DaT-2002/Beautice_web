@@ -407,7 +407,7 @@ footer.visible {
 
 .contact .contact-form {
   flex: 1;
-  max-width: 500px;
+  max-width: 520px;
   padding: 30px;
   border-radius: 20px;
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
@@ -432,11 +432,15 @@ footer.visible {
   width: 100%;
   padding: 15px;
   margin-bottom: 40px;
-  /* Add this line to create a 40px gap between the elements */
   border-radius: 15px;
   border: 1px solid #ddd;
   box-sizing: border-box;
   border: 2px solid #D9DDFE;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.09em;
+  color: #C5C5C5;
+  font-size: 16px;
+  /* Change font to Poppins */
 }
 
 .contact-form textarea {
@@ -460,15 +464,23 @@ footer.visible {
 
 .input-group {
   display: flex;
-  gap: 10px;
+  gap: 0px;
   /* Khoảng cách giữa các ô input */
 }
 
 .input-group input {
   flex: 1;
   /* Chia đều độ rộng cho cả hai ô input */
-  padding: 8px;
+  padding: 5px;
   font-size: 16px;
+
+}
+
+.input-group input[type="text"] {
+  width: 90%;
+  /* Adjust the width of the input fields */
+  height: 62px;
+  /* Adjust the height of the input fields */
 }
 
 .watch-video-btn {
@@ -503,7 +515,7 @@ footer.visible {
 
 .footer {
   font-family: 'Poppins';
-  color: rgb(255, 255, 255);
+  color: #D7DBFF;
   padding: 50px;
   text-align: center;
   display: flex;
@@ -517,7 +529,9 @@ footer.visible {
   /* Prevent the background from repeating */
   /* background-color: #0D165C; */
   position: relative;
-  /* Ensure the footer is positioned relative to its pseudo-elements */
+  font-family: "poppins";
+  height: 600px
+    /* Ensure the footer is positioned relative to its pseudo-elements */
 }
 
 .footer::after {
@@ -574,6 +588,10 @@ footer.visible {
 
 .footer ul li {
   margin-bottom: 10px;
+  padding-left: 20px;
+  /* Add padding to align with the headings */
+  text-align: left;
+  /* Ensure the text is aligned to the left */
 }
 
 .footer ul li a {
@@ -583,22 +601,19 @@ footer.visible {
 
 .footer .social-icons {
   display: flex;
+
   gap: 30px;
   /* Reduce the gap between icons */
   justify-content: flex-start;
-  /* Align icons to the left */
   position: absolute;
   bottom: 10%;
-  /* Position at the bottom */
   left: 10%;
-  /* Position at the left */
 }
 
 .footer .social-icons img {
-  width: 20px;
-  /* Resize the icons */
-  height: 20px;
-  /* Resize the icons */
+  width: 25px;
+  padding: 15px;
+  height: 30px;
 }
 
 .footer .column ul {
@@ -606,20 +621,23 @@ footer.visible {
   padding: 0;
   margin: 0;
   text-align: left;
-  /* Ensure the text is aligned to the left */
 }
 
 .footer .column ul li {
   margin-bottom: 10px;
-  padding-left: 20px;
-  /* Add padding to align with the headings */
+  padding-left: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.footer .column ul {
+  padding-left: 0;
 }
 
 .footer .column h3 {
   margin-bottom: 15px;
   font-size: 18px;
   text-align: left;
-  /* Ensure the headings are aligned to the left */
 }
 
 .column h3 {
@@ -661,8 +679,9 @@ footer.visible {
 }
 
 .footer p {
-  margin-left: 100px;
+  /* margin-left: 100px; */
   /* Indent the text content */
+  font-size: 16px;
 }
 
 .copyright {
